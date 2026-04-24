@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PAU - EDUCATIONAL APPLICATION</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!-- Bootstrap Icon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+		<!-- CSS link -->
+		<link rel="stylesheet" type="text/css" href="./index.css">
+
+		<!-- Google Fonts for LOGO -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+		<!-- Google Fonts for text -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+		    <div id="navcontainer" class="container">
+		        <a id="logo" class="navbar-brand" href="#">ScholarHub</a>
+
+		        <button id="burger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+		            <span id="navburger" class="navbar-toggler-icon"></span>
+		        </button>
+
+		        <div id="navbarNavAltMarkup" class="collapse navbar-collapse justify-content-center">
+		            <div class="navbar-nav align-items-center">
+		                <a class="nav-link active mx-3" href="#home">Home</a>
+		                <a class="nav-link mx-3" href="#categories-section">Categories</a>
+		                <a class="nav-link mx-3" href="#contact">Contact</a>
+		                <a class="nav-link mx-3" href="#about">About</a>
+		            </div>
+		        </div>
+
+		        <div class="d-none d-lg-flex align-items-center">
+		            <a href="#home">
+		                <button id="themeToggle" class="btn btn-start-course ms-2">
+		                    Start Course
+		                </button>
+		            </a>
+		        </div>
+		    </div>
+		</nav>
+		<!-- Navbar ends here -->
+
+		<!-- Hero Section -->
+		<section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div id="introduction" class="col-lg-6">
+                <span class="badge hero-badge mb-3">EMPOWERING YOUR POTENTIAL</span>
+                <h1 class="hero-title mb-4">
+                    The Future of <span class="highlight-text">Lifelong Learning</span> is Here.
+                </h1>
+                <p class="hero-description mb-5">
+                    ScholarHub provides a distraction-free, academic environment designed for the modern learner. Access curated resources, professional certifications, and community insights.
+                </p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-explore">Explore Resources <i class="bi bi-arrow-right"></i></button>
+                    <button class="btn btn-outline-curriculum">View Curriculum</button>
+                </div>
+            </div>
+
+           <div class="col-lg-6 hero-image-container">
+               <img src="./images/students.png" alt="ScholarHub Students" class="img-fluid">
+
+               <div class="rating-card">
+                   <div class="star-circle">
+                       <i class="bi bi-star-fill"></i>
+                   </div>
+                   <div class="rating-text">
+                       <h5 class="m-0 fw-bold" style="font-size: 1.1rem; color: #1E104E;">4.9/5</h5>
+                       <p class="m-0 text-muted" style="font-size: 0.75rem;">Student Satisfaction</p>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+	<!-- Hero Section ends here -->
+
+	<!-- Featured Resources -->
+	<section id="featured" class="py-5">
+	    <div class="container">
+	        <div class="d-flex justify-content-between align-items-end mb-4">
+	            <div>
+	                <h2 class="section-title">Featured Resources</h2>
+	                <p class="text-muted">Trending topics selected by our academic advisors.</p>
+	            </div>
+	            <a href="#" class="view-all-link">View All <i class="bi bi-box-arrow-up-right"></i></a>
+	        </div>
+
+	        <div class="row row-cols-1 row-cols-md-3 g-4">
+	            
+	            <div class="col">
+	                <div class="card h-100 resource-card">
+	                    <div class="position-relative">
+	                        <img src="./images/feat1.png" class="card-img-top" alt="Quantum">
+	                        <span class="badge category-badge bg-yellow">New Arrival</span>
+	                    </div>
+	                    <div class="card-body">
+	                        <h5 class="card-title">Quantum Mechanics Foundation</h5>
+	                        <p class="card-text text-muted">An advanced guide to understanding subatomic particles and wave-particle duality.</p>
+	                        
+	                        <div class="mt-4">
+	                            <div class="progress" style="height: 8px;">
+	                                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FF653F;"></div>
+	                            </div>
+	                            <div class="d-flex justify-content-between mt-2 small fw-bold">
+	                                <span>75% Complete</span>
+	                                <span class="text-dark-purple">12 Lessons Left</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col">
+	                <div class="card h-100 resource-card">
+	                    <div class="position-relative">
+	                        <img src="./images/feat2.png" class="card-img-top" alt="Hacking">
+	                        <span class="badge category-badge bg-purple">Intermediate</span>
+	                    </div>
+	                    <div class="card-body">
+	                        <h5 class="card-title">Ethical Hacking: Principles</h5>
+	                        <p class="card-text text-muted">Learn the fundamentals of cybersecurity and how to protect digital infrastructures.</p>
+	                        
+	                        <div class="d-flex justify-content-between align-items-center mt-4">
+	                            <div class="user-avatars">
+	                                <span class="avatar-group">+4k</span>
+	                            </div>
+	                            <a href="#" class="start-link">Start Module <i class="bi bi-play-circle"></i></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col">
+	                <div class="card h-100 resource-card">
+	                    <div class="position-relative">
+	                        <img src="./images/feat3.png" class="card-img-top" alt="Thesis">
+	                        <span class="badge category-badge bg-pink">Advanced</span>
+	                    </div>
+	                    <div class="card-body">
+	                        <h5 class="card-title">Academic Thesis Writing</h5>
+	                        <p class="card-text text-muted">Mastering the art of research methodology, citations, and critical argumentation.</p>
+	                        
+	                        <div class="mt-4 d-flex align-items-center gap-2 text-muted">
+	                            <i class="bi bi-clock-history text-yellow"></i>
+	                            <span class="small fw-bold">12 Hours of Content</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	        </div>
+	    </div>
+	</section>
+	<!-- Featured Resources ends her -->
+
+	<!-- Categories section -->
+	<section id="categories-section" class="py-5">
+    <div class="container text-center mb-5">
+        <h2 class="section-title mb-2">Explore Knowledge Hubs</h2>
+        <p class="text-muted">Deeper understanding across diverse domains.</p>
+    </div>
+
+    <div class="container">
+        <div id="categories" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="category-card">
+                    <div class="icon-box bg-dark-purple">
+                        <i class="bi bi-code-slash text-white"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3">Technology</h5>
+                    <p class="small text-muted">Coding, AI, and Robotics</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="category-card">
+                    <div class="icon-box bg-accent-orange">
+                        <i class="bi bi-gear text-white"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3">Science</h5>
+                    <p class="small text-muted">Physics, Biology, Chem</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="category-card">
+                    <div class="icon-box bg-highlight-yellow">
+                        <i class="bi bi-palette text-dark-purple"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3">Arts</h5>
+                    <p class="small text-muted">Design, History, Media</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="category-card">
+                    <div class="icon-box bg-light-purple">
+                        <i class="bi bi-book text-white"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3">Humanities</h5>
+                    <p class="small text-muted">Psychology, Philosophy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div id="resources" class="row g-4">
+            <div class="col-lg-8">
+                <div class="classics-card position-relative overflow-hidden rounded-4 h-100" style="min-height: 400px;">
+                    <img src="./images/feat3.png" alt="Classics" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                    <div class="classics-overlay p-4 position-absolute bottom-0 start-0 m-4 rounded-4" style="background: rgba(30, 16, 78, 0.9); max-width: 380px; backdrop-filter: blur(8px); z-index: 2;">
+                        <h3 class="text-white fw-bold mb-2">The Classics Collection</h3>
+                        <p class="text-white-50 small mb-3">
+                            A handpicked digital library of literature that defined the modern Western intellectual tradition.
+                        </p>
+                        <a href="#home">
+                            <button class="btn btn-outline-light-custom w-fit">Launch Tool</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="ai-assistant-card p-4 rounded-4 h-100 d-flex flex-column justify-content-center" style="background-color: #1E104E; text-align: left;">
+                    <div class="ai-icon mb-2">
+                        <i class="bi bi-stars" style="color: #FFC85C; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 class="text-white fw-bold mb-2">Scholar AI Assistant</h4>
+                    <p class="text-white-50 mb-4 small" style="line-height: 1.4;">
+                        Our proprietary AI helps you summarize complex research papers in seconds. Try the beta version now.
+                    </p>
+                    <a href="#home">
+                        <button class="btn btn-accent-orange text-white px-4 py-2 border-0 rounded-3 small">Access Library</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<!-- Categories section ends here -->
+
+	<!-- Mission and Contact -->
+	<section id="about" class="py-5 bg-white">
+	    <div class="container py-lg-5">
+	        <div class="row align-items-center g-5">
+	            <div id="mission" class="col-lg-6">
+	                <h2 class="fw-bold mb-4" style="color: #1E104E; font-size: 2.5rem;">
+	                    The Mission of Hub Discovery
+	                </h2>
+	                <div style="width: 60px; height: 4px; background-color: #FF653F; margin-bottom: 2rem;"></div>
+	                
+	                <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+	                    ScholarHub was born from the belief that access to high-quality academic resources should be intuitive and inspiring. Our mission is to democratize elite-level educational materials while providing a workspace that respects the user's focus and intent.
+	                </p>
+
+	                <ul class="list-unstyled">
+	                    <li class="mb-3 d-flex align-items-center">
+	                        <i class="bi bi-check-circle-fill me-3" style="color: #FF653F;"></i>
+	                        <span class="fw-semibold text-dark">Curated Peer-Reviewed Content</span>
+	                    </li>
+	                    <li class="mb-3 d-flex align-items-center">
+	                        <i class="bi bi-check-circle-fill me-3" style="color: #FF653F;"></i>
+	                        <span class="fw-semibold text-dark">Zero-Ad Distraction-Free Workspace</span>
+	                    </li>
+	                    <li class="mb-3 d-flex align-items-center">
+	                        <i class="bi bi-check-circle-fill me-3" style="color: #FF653F;"></i>
+	                        <span class="fw-semibold text-dark">Certified Learning Pathways</span>
+	                    </li>
+	                </ul>
+	            </div>
+
+	            <div id="contact" class="col-lg-6">
+	                <div class="contact-card p-4 p-md-5 rounded-5 shadow-sm border border-light bg-white">
+	                    <h3 class="fw-bold mb-2" style="color: #1E104E;">Contact Our Support</h3>
+	                    <p class="text-muted small mb-4">Have a question or want to contribute a resource? Drop us a line.</p>
+	                    
+	                    <form>
+	                        <div class="mb-3">
+	                            <label class="form-label small fw-bold text-muted text-uppercase">Your Name</label>
+	                            <input type="text" class="form-control bg-light border-0 py-2" placeholder="Alex Johnson">
+	                        </div>
+	                        <div class="mb-3">
+	                            <label class="form-label small fw-bold text-muted text-uppercase">Academic Email</label>
+	                            <input type="email" class="form-control bg-light border-0 py-2" placeholder="alex@university.edu">
+	                        </div>
+	                        <div class="mb-4">
+	                            <label class="form-label small fw-bold text-muted text-uppercase">Message</label>
+	                            <textarea class="form-control bg-light border-0" rows="3" placeholder="How can we help?"></textarea>
+	                        </div>
+	                        <button type="submit" class="btn btn-dark-purple w-100 py-3 rounded-3 text-white fw-bold d-flex align-items-center justify-content-center">
+	                            Send Message <i class="bi bi-send-fill ms-2"></i>
+	                        </button>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<!-- Mission and Contact ends-->
+
+	<!-- Footer -->
+	<footer class="py-4 bg-white border-top">
+	    <div class="container">
+	        <div class="row align-items-center">
+	            <div class="col-md-6 text-center text-md-start">
+	                <p class="mb-0 text-muted small fw-bold text-uppercase tracking-wider">
+	                    © 2024 ScholarHub. Empowering Lifelong Learners.
+	                </p>
+	            </div>
+	            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+	                <ul class="list-inline mb-0">
+	                    <li class="list-inline-item me-4">
+	                        <a href="#home" class="text-decoration-none text-muted small fw-bold text-uppercase tracking-wider footer-link">Privacy Policy</a>
+	                    </li>
+	                    <li class="list-inline-item me-4">
+	                        <a href="#home" class="text-decoration-none text-muted small fw-bold text-uppercase tracking-wider footer-link">Terms of Service</a>
+	                    </li>
+	                    <li class="list-inline-item">
+	                        <a href="#contact" class="text-decoration-none text-muted small fw-bold text-uppercase tracking-wider footer-link">Contact Support</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+	<!-- Footer ends here -->
+
+		<!-- External JS -->
+		<script type="text/javascript" src="./index.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</body>
+</html>

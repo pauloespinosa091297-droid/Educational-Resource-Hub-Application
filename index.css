@@ -1,0 +1,470 @@
+/* Import Montserrat (Assuming you're using Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --primary-dark: #1E104E;
+    --secondary-purple: #452E5A;
+    --accent-orange: #FF653F;
+    --highlight-yellow: #FFC85C;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-purple);
+}
+
+/* Navbar specific typography */
+/* Update this block */
+#navbar {
+    background-color: #ffffff; /* Solid white background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(30, 16, 78, 0.05); /* Subtle purple-tinted border */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    padding: 12px 0; /* Adjust height slightly */
+    transition: all 0.3s ease;
+}
+
+/* Keep your existing typography below it */
+#logo {
+    font-family: 'Bauman', sans-serif;
+    font-weight: 800;
+    color: #1E104E !important; 
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #452E5A !important; 
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: #FF653F !important;
+    border-bottom: 2px solid #FF653F;
+}
+
+.btn-start-course {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #FF653F;
+    color: white !important;
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition: all 0.3s ease;
+}
+
+.btn-start-course:hover {
+    background-color: #e55a35; 
+    box-shadow: 0 4px 15px rgba(255, 101, 63, 0.3);
+}
+
+/*  Navbar ends here */
+
+
+
+
+/* Hero Section */
+/* --- Hero Section Global --- */
+.hero-section {
+    padding-top: 140px; /* Space for the transparent glass navbar */
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* --- Typography & Text Elements --- */
+.hero-badge {
+    background-color: rgba(255, 101, 63, 0.1); /* Subtle 10% opacity of your orange */
+    color: #FF653F;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 8px 16px;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.hero-title {
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw, 3.8rem); /* Responsive font sizing */
+    color: #1E104E;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.highlight-text {
+    color: #FF653F;
+}
+
+.hero-description {
+    color: #452E5A;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-top: 25px;
+}
+
+/* --- Interactive Buttons --- */
+
+/* Primary Button: Explore Resources */
+.btn-explore {
+    background-color: #FF653F;
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 2px solid #FF653F;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-explore:hover {
+    background-color: #e85630; /* Darker version of #FF653F */
+    border-color: #e85630;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 101, 63, 0.2);
+}
+
+.btn-explore:active {
+    transform: translateY(-1px);
+    background-color: #d44d2a;
+}
+
+/* Outline Button: View Curriculum */
+.btn-outline-curriculum {
+    background-color: transparent;
+    color: #1E104E;
+    font-weight: 700;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 2px solid #1E104E;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-curriculum:hover {
+    background-color: #1E104E;
+    color: #FFC85C !important; /* Swaps to your highlight yellow on hover */
+    transform: translateY(-3px);
+}
+
+.btn-outline-curriculum:active {
+    transform: translateY(-1px);
+    background-color: #150b36;
+}
+
+/* --- Image & Floating Card Styling --- */
+/* Container to give the 3D depth effect */
+.hero-image-container {
+    perspective: 1000px; 
+    position: relative;
+    padding-left: 50px; /* Space for the card to overlap left */
+}
+
+/* The actual rotation effect */
+.hero-image-container img {
+    width: 100%;
+    border-radius: 30px;
+    transform: rotateY(-10deg) rotateX(5deg) rotateZ(-2deg);
+    box-shadow: 20px 20px 50px rgba(30, 16, 78, 0.15);
+    transition: transform 0.5s ease;
+}
+
+/* Subtle hover effect for the image */
+.hero-image-container:hover img {
+    transform: rotateY(-5deg) rotateX(2deg) rotateZ(-1deg);
+}
+
+.rating-card {
+    position: absolute;
+    bottom: 40px;      /* Adjusted to sit higher from the bottom */
+    left: 10px;        /* This pulls it toward the text/center */
+    background: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Make the card slightly counter-rotate so the text stays flat/readable */
+    transform: rotateZ(2deg); 
+}
+
+.star-circle {
+    background-color: #FFC85C; /* Your Palette Yellow */
+    color: #1E104E;            /* Your Palette Dark Purple */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .d-flex.gap-3 {
+        justify-content: center;
+    }
+    .rating-card {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 20px;
+    }
+}
+
+
+
+
+
+/* Featured section */
+
+/* Section Typography */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #1E104E;
+    font-weight: 800;
+}
+
+.view-all-link {
+    color: #FF653F;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Card Styling */
+.resource-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #1E104E;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Badge Styles */
+.category-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.bg-yellow { background-color: #FFC85C; color: #1E104E; }
+.bg-purple { background-color: #452E5A; color: white; }
+.bg-pink { background-color: #ffdada; color: #FF653F; }
+
+/* Links & Icons */
+.start-link {
+    color: #FF653F;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.text-dark-purple {
+    color: #1E104E;
+}
+
+.text-yellow {
+    color: #FFC85C;
+}
+
+
+
+
+/* Categories */
+/* Palette & Helper Classes */
+.bg-dark-purple { background-color: #1E104E; }
+.bg-accent-orange { background-color: #FF653F; }
+.bg-highlight-yellow { background-color: #FFC85C; }
+.bg-light-purple { background-color: #E6E0F0; }
+.text-dark-purple { color: #1E104E; }
+
+/* Category Card Styling */
+.category-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(30, 16, 78, 0.08);
+    border-color: #FFC85C;
+}
+
+/* Icon Box */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Button Styles */
+.btn-accent-orange {
+    background-color: #FF653F;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-accent-orange:hover {
+    background-color: #e55a38;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light-custom {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light-custom:hover {
+    background: white;
+    color: #1E104E;
+}
+
+/* Utilities */
+.object-fit-cover { object-fit: cover; }
+.w-fit { width: fit-content; }
+
+/* Visual Divider (Pink line from design) */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #FF5A5A;
+    margin: 15px auto 0;
+}
+
+
+
+
+
+
+
+
+/* Mission and Contact */
+/* About Section Styles */
+#about {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Rounded Card specifically for the form */
+.contact-card {
+    border-radius: 30px !important;
+}
+
+/* Form input adjustments */
+.contact-card .form-control {
+    border-radius: 10px;
+}
+
+.contact-card .form-control:focus {
+    box-shadow: none;
+    background-color: #f0f0f0;
+}
+
+/* Deep Purple Button */
+.btn-dark-purple {
+    background-color: #1E104E;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-dark-purple:hover {
+    background-color: #2e1b6e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 16, 78, 0.2);
+}
+
+/* Checkmark icons */
+.bi-check-circle-fill {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+/* Footer Specific Styles */
+footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #1E104E !important; /* Your dark purple palette color */
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+    .list-inline-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
